@@ -1,0 +1,489 @@
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 30px;
+}
+
+.mainL {
+  min-height: 500px;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.mainL hr{
+  width: 80%;
+}
+
+.mainL ul {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.ListIcons::before{
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-size: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.mainL ul li:before {
+  #background-image: url("../Icons/4180404_squircle_steam_icon.png");
+  background-color: orange;
+}
+
+.urlIcons{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.urlIcons div{
+  padding: 10px;
+}
+
+.urlIcons button{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 25%;
+  background-size: cover;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 180px;
+}
+
+.info div{
+  justify-self: start;
+}
+
+.info h3,h4{
+  margin: 10px;
+  white-space: nowrap
+}
+
+.info h3{
+  background-color: orange;
+}
+
+.skill{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 180px;
+  text-align: center;
+}
+
+.filledLine{
+  height: 5px; 
+  background-color: orange;
+}
+
+.emptyLine{
+  height: 2px; 
+  background-color: slategray;
+}
+
+.skillLine{
+  display: grid;
+  align-items: center;
+}
+
+.ResDown{
+  width: 100%;
+  height: 50px;
+  background-color: orange;
+}
+
+.mainC {
+  min-height: 500px;
+  width: 1000px;
+  margin: 10px;
+}
+
+.Section0{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+  padding: 50px;
+}
+
+.S0Img{
+  width: 100%; 
+  background-image: url('../Photos/YT\ Intro\ Thumpnail.png'); 
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 0% 50% 0% 50%;
+}
+
+.center{
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+.border{
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.Section1{
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+.Section0 button{
+  width: 25%;
+  height: 50px;
+  background-color: orange;
+}
+
+.Section2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content:space-around ;
+}
+
+.Section2 img{
+  width: 30%;
+}
+
+.Section3{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content:space-around ;
+}
+
+.S2Card{
+  height: 300px;
+  background-color: white;
+  margin: 20px;
+}
+
+.S2Card h1,h2,h3,h4,h5,h6{
+  white-space: normal;
+}
+
+.Section3 li{
+  font-size: 15px !important;
+  font-weight: bold;
+}
+
+.S3Card{
+  padding: 0px 20px 20px 20px; 
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.S3Card h2,h5{
+  display: inline;
+}
+
+.S3Card button{
+  width: 50%;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.5s;
+}
+
+.S3Card button:hover{
+  width: 60%;
+  border-radius: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+}
+
+.S3Card li{
+  padding: 10px;
+  font-size: 24px;
+}
+
+.S3Suggested{
+  background-color: orange;
+  height: 30px;
+  padding: 5px;
+}
+
+.S3NotSuggested{
+  height: 30px;
+  padding: 5px;
+}
+
+.ListIcons2::before{
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.rightIcon::before{
+  background-image: url("../Icons/check.png");
+}
+
+.wrongIcon::before{
+  background-image: url("../Icons/cross-button.png");
+}
+
+.Section4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content:space-around ;
+}
+
+.S4Card{
+  padding: 20px;
+  margin: 10px;
+}
+
+.Stars{
+  display: flex;
+  flex-direction: row;
+}
+
+.Star{
+  width: 20px;
+  height: 20px;
+  background-image: url("../Icons/star.png");
+  background-size: cover;
+  margin: 5px;
+}
+
+.S4User{
+  display: grid;
+  grid-template-areas:
+  "a  b";
+}
+
+.S4User img{
+  width: 70px;
+  height: 70px;
+  margin:10px;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.dots{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  justify-content: center;
+  margin: 20px;
+}
+.dots div{
+  width: 10px; 
+  height: 10px;
+  background-color: orange;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.Section5{
+  padding: 20px;
+}
+
+.S5table{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.S5table b{
+  background-color: orange;
+  width: auto;
+}
+
+.S6Buttons button{
+  margin: 10px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.S6Buttons button:hover{
+  font-weight: bold;
+  color: orange;
+  transition-duration: 0.5s;
+}
+
+.S6Grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.S6Grid button{
+  aspect-ratio : 1 / 1;
+  margin: 10px;
+  background-size: cover;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  color: orange;
+}
+
+.S6Grid button:hover{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  transition-duration: 0.5s;
+  background-image:none;
+  text-shadow:2px 2px 10px rgb(0, 0, 0);
+}
+
+.Section7{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.S7Card{
+  margin: 10px;
+}
+
+.Section8{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "L1 L2"
+  "Form S1"
+  "Form S2"
+  "Form S3";
+  
+}
+
+.S8Card{
+  display: grid;
+  grid-template-areas: 
+  "img img"
+  "a d"
+  "b e"
+  "c f";
+  margin: 10px;
+  padding: 20px;
+}
+
+.S8Card img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin:10px;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: solid;
+  align-content: center;
+}
+
+.S8Form{
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.S8Form form div{
+  margin: 10px;
+}
+
+.Section8 form input,textarea,label{
+  
+  width: 100%;
+  height: 50px;
+  resize: none;
+  
+}
+
+.Section8 form input[type="submit"]{
+  background-color: orange;
+  width: 30%;
+}
+
+.MapSec{
+  padding: 10px;
+  margin: 10px;
+}
+
+.MapSec iframe{
+  width: 100%;
+  
+  border-radius: 50px;
+}
+
+.mainR {
+  min-height: 500px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.mainR button{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.whitebg {
+  background-color: white;
+}
+
+.blackbg {
+  background-color: black;
+}
+
+.greybg {
+  background-color: grey;
+}
+
+.w100 {
+  width: 100%;
+}
